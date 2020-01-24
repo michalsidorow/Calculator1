@@ -1,0 +1,60 @@
+.Button {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+
+.orangeButtons{
+    -fx-background-color: brown;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+.orangeButtons:hover{
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+
+.orangeButtons:pressed{
+    -fx-background-color: darkbrown;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+
+.orangeButtons:focused{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+
+.greenButtons{
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+.greenButtons:hover{
+    -fx-background-color: lightgreen;
+    -fx-text-fill: purple;
+    -fx-font: sans-serif;
+}
+.greenButtons:pressed{
+    -fx-background-color: darkgreen;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+.greenButtons:focused{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font: sans-serif;
+}
+
+.display {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+}
+.Clear {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    
+}
