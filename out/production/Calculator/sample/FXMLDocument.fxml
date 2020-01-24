@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXMLDocumentcontroller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="129.99999237060547" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="346.6666768391927" minHeight="10.0" prefHeight="240.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="83.66665649414062" minHeight="1.666656494140625" prefHeight="60.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" styleClass="orangeButtons" stylesheets="@../application.css" text="AC" />
+            <Button fx:id="sign" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" styleClass="orangeButtons" stylesheets="@../application.css" text="+/-" GridPane.columnIndex="1" />
+            <Button fx:id="percent" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" styleClass="orangeButtons" stylesheets="@../application.css" text="\%" GridPane.columnIndex="2" />
+            <Button fx:id="split" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" style="-fx-graphic: url('https://www.stickpng.com/img/icons-logos-emojis/mathematical-signs/division-sign');" styleClass="greenButtons" stylesheets="@../application.css" GridPane.columnIndex="3">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="54.0">
+                     <image>
+                        <Image url="@../../../../Downloads/division.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="eight" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="seven" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="7" GridPane.rowIndex="1" />
+            <Button fx:id="nine" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="multiplication" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" styleClass="greenButtons" stylesheets="@../application.css" text="x" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="four" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="4" GridPane.rowIndex="2" />
+            <Button fx:id="five" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="six" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="minus" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" styleClass="greenButtons" stylesheets="@../application.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="one" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="1" GridPane.rowIndex="3" />
+            <Button fx:id="two" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="trhee" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="plus" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="61.0" prefWidth="85.0" styleClass="greenButtons" stylesheets="@../application.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.33331298828125" minWidth="10.0" prefWidth="140.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="124.3333740234375" minWidth="10.0" prefWidth="70.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="dot" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="85.0" text="." GridPane.columnIndex="1" />
+            <Button fx:id="equals" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="77.0" prefWidth="132.0" styleClass="greenButtons" stylesheets="@../application.css" text="=" GridPane.columnIndex="2" />
+            <Button fx:id="zero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="87.0" prefWidth="170.0" text="0" />
+         </children>
+      </GridPane>
+      <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" prefHeight="39.0" prefWidth="280.0" promptText="0" styleClass="display" stylesheets="@../application.css" />
+   </children>
+</GridPane>
